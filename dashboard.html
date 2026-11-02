@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل مدیریت | SOURCE</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="dashboard-header">
+    <h1>SOURCE</h1>
+    <button id="logout-button">خروج از حساب</button>
+  </header>
+
+  <main class="dashboard-container">
+    <h2>مدیریت درخواست‌های فروش</h2>
+    <p>درخواست‌های ثبت‌شده کاربران را از این قسمت مدیریت کنید.</p>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h3>تعداد کل درخواست‌ها</h3>
+        <span id="total-requests">۰</span>
+      </div>
+
+      <div class="stat-card">
+        <h3>درخواست‌های جدید</h3>
+        <span id="new-requests">۰</span>
+      </div>
+    </section>
+
+    <section class="requests-section">
+      <h3>فهرست درخواست‌ها</h3>
+
+      <div id="requests-container">
+        <p>در حال دریافت درخواست‌ها...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
