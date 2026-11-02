@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود مدیر | SOURCE</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <main class="login-container">
+    <div class="login-box">
+      <h1>SOURCE</h1>
+      <h2>ورود به پنل مدیریت</h2>
+      <p>برای مشاهده درخواست‌ها وارد حساب خود شوید.</p>
+
+      <form id="login-form">
+        <label for="email">ایمیل</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="ایمیل مدیر"
+          required
+        >
+
+        <label for="password">رمز عبور</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="رمز عبور"
+          required
+        >
+
+        <button type="submit" id="login-button">
+          ورود به پنل
+        </button>
+
+        <p id="login-message" hidden></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+
+</body>
+</html>
